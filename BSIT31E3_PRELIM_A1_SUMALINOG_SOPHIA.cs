@@ -1,6 +1,6 @@
 using System;
 
-namespace BSIT31E_PRELIM_A1
+namespace BSIT31E3_PRELIM_A1_SUMALINOG_SOPHIA
 {
     class Program
     {
@@ -8,7 +8,14 @@ namespace BSIT31E_PRELIM_A1
         {
             for (int i = 1; i <= 100; i++)
             {
-                // Logic will be added next
+                if (i % 3 == 0 && i % 5 == 0)
+                    Console.WriteLine("FizzBuzz");
+                else if (i % 3 == 0)
+                    Console.WriteLine("Fizz");
+                else if (i % 5 == 0)
+                    Console.WriteLine("Buzz");
+                else
+                    Console.WriteLine(i);
             }
         }
     }
